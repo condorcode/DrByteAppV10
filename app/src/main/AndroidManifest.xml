@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cl.appdrbyte.condor_code.drbyteappv10">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/dr_byte_icon_2"
+        android:label="Dr_byte"
+        android:roundIcon="@drawable/dr_byte_icon_2"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".activity_1_log_in" />
+
+        <!-- activity android:name=".activity_2" / -->
+        <!-- activity android:name=".activity_3_perfil_creado_validar" / -->
+
+        <activity android:name=".splash_screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity_2_log_screen" />
+        <activity
+            android:name=".activity_3_drawer_menu"
+            android:label="@string/title_activity_3_drawer_menu"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity_4_job_act"
+            android:label="Ingresar servicio" />
+        <activity
+            android:name=".DetalleActividad"
+            android:label="Servicio en curso" />
+        <activity
+            android:name=".CotizarActivity_5"
+            android:label="Cotizar servicio" />
+        <activity
+            android:name=".GenerarCotiza_6"
+            android:label="Cotización">
+            >
+        </activity>
+        <activity
+            android:name=".DrawerEstadisticasEX"
+            android:label="Estadisticas">
+            >
+        </activity>
+        <activity android:name=".MailSend"></activity>
+    </application>
+
+</manifest>

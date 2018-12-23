@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DrawerEstadisticasEX">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/AppBarOverlay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorbarra"
+        app:popupTheme="@style/PopupOverlay"
+
+        />
+    <!--++++++++++++++FIN++APP BAR++++++++++++++++++++++++++++++-->
+
+    <!--++++++++++++++NOMBRE CLIENTE TEXVIEW++++++++++++++++++++++++++++++-->
+
+    <TextView
+        android:id="@+id/txt_estadistic_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:text="Vistas"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+
+                >
+
+                <!--++++++++++++++TITULO MAS BARRA DIVISORA++++++++++++++++++++++-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/txt_estado_serv_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="2dp"
+                        android:text="Estado servicio"
+                        android:textColor="@color/colorbarra"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <ImageView
+                        android:id="@+id/img_linea_div_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/boton_color_cal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="horizontal">
+
+
+
+
+
+                    <ImageView
+                        android:id="@+id/img_graph_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/graph_a" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+</LinearLayout>

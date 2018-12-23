@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_4_job_act"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_2"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorbarra"
+            app:popupTheme="@style/PopupOverlay"
+
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_dat_equi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/dat_equip"
+                android:textColor="@color/colorbarra"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_marc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/dat_marc"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/txt_ed_ing_marc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/colorLetra_2"
+                android:ems="10"
+                android:hint="@string/ingrese_marc"
+                android:inputType="text"
+                android:textColor="@color/colorLetra_2"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/dat_no_serie"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/txt_ed_ing_n_seri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/colorLetra_2"
+                android:ems="10"
+                android:hint="@string/ingrese_no_serie"
+                android:inputType="text"
+                android:textColor="@color/colorLetra_2"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txt_obs_cli"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/obs_cliente"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:textSize="14dp"
+                android:textColor="@color/colorLetra_2"
+                android:backgroundTint="@color/colorLetra_2"
+                />
+
+            <TextView
+                android:id="@+id/txt_obs_tec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/obs_tec"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/ed_txt_obs_tec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:textSize="14dp"
+                android:textColor="@color/colorLetra_2"
+                android:backgroundTint="@color/colorLetra_2"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/img_btn_1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:elevation="4dp"
+                    android:scaleType="fitEnd"
+                    android:backgroundTint="@color/colorBoton_1"
+                    app:srcCompat="@drawable/image_plus" />
+
+                <ImageButton
+                    android:id="@+id/img_btn_2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:elevation="4dp"
+                    android:scaleType="fitEnd"
+                    app:srcCompat="@drawable/image_plus"
+                    android:backgroundTint="@color/colorBoton_1"
+                    />
+
+            </LinearLayout>
+
+
+
+            <CheckBox
+                android:id="@+id/checkBoxCli"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+
+                android:backgroundTint="@color/colorLetra_2"
+                android:buttonTint="@color/colorLetra_2"
+                android:text="@string/chk_box_copia"
+                android:textColor="@color/colorLetra_2"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_dat_cliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/dat_cliente"
+                android:textColor="@color/colorbarra"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:visibility="gone"
+
+
+                />
+
+            <TextView
+                android:id="@+id/txt_nom_cli"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/texto_nombre"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16dp"
+                android:visibility="gone"
+                />
+
+            <EditText
+                android:id="@+id/txt_ed_nom_cli"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/colorLetra_2"
+                android:ems="10"
+                android:hint="@string/ingrese_nom"
+                android:inputType="text"
+                android:textColor="@color/colorLetra_2"
+                android:textSize="14dp"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/txt_correo_cli"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/texto_correo"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16dp"
+                android:visibility="gone"
+                />
+
+            <EditText
+                android:id="@+id/txt_ed_correo_cli"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/colorLetra_2"
+                android:ems="10"
+                android:hint="@string/ingrese_correo"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorLetra_2"
+                android:textSize="14dp"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/txt_cel_cli"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/texto_celular"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16dp"
+                android:visibility="gone"
+                />
+
+            <EditText
+                android:id="@+id/txt_ed_cel_cli"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/colorLetra_2"
+                android:ems="10"
+                android:hint="@string/ingrese_cel"
+                android:inputType="phone"
+                android:textColor="@color/colorLetra_2"
+                android:textSize="14dp"
+                android:visibility="gone"
+                />
+
+
+
+            <Button
+                android:id="@+id/button_job_1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/Botón_guardar_1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/colorblanco"
+                android:background="@drawable/mi_boton_cal"
+                />
+
+
+        </LinearLayout>
+        </ScrollView>
+
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+</android.support.constraint.ConstraintLayout>

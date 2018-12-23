@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CotizarActivity_5"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/AppBarOverlay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorbarra"
+            app:popupTheme="@style/PopupOverlay"
+
+            />
+
+
+        <TextView
+            android:id="@+id/txt_coti_nom_cli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="cliente"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/txt_estado_serv_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="5dp"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="2dp"
+                    android:text="Prestación servicios"
+                    android:textColor="@color/colorbarra"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:id="@+id/img_linea_div_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/boton_color_cal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginBottom="0dp"
+                android:orientation="horizontal">
+
+
+                <ListView
+                    android:id="@+id/lv_cotiz_spinner"
+                    android:drawSelectorOnTop="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:divider="@color/colorLetra_2"
+                    android:dividerHeight="1px"
+
+                    >
+
+                </ListView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/txt_estado_serv_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="2dp"
+                    android:text="Cantidad items"
+                    android:textColor="@color/colorbarra"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:id="@+id/img_linea_div_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/boton_color_cal" />
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_marginBottom="0dp"
+                android:orientation="horizontal">
+
+                <ListView
+                    android:id="@+id/lv_almacen_1"
+                    android:drawSelectorOnTop="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:divider="@color/colorLetra_2"
+                    android:dividerHeight="1px"
+                    android:textSize="10sp">
+
+                </ListView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cot_1"
+                android:layout_width="190dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/mi_boton_cal"
+                android:text="Generar cotización"
+
+                android:textColor="@color/colorblanco" />
+
+            <TextView
+                android:id="@+id/txt_view_resultado_1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="5dp"
+
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/alert_white"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+
+                android:text="=Total +"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorLetra_1"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+</LinearLayout>

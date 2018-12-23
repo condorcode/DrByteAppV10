@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">DrbyteApp_1</string>
+    <string name="action_settings">Settings</string>
+    <string name="Screen_1_titulo">Pantalla_1</string>
+    <string name="Botón_1_siguente">Siguente</string>
+
+    <string name="Screen_2_titulo">Pantalla_2</string>
+    <string name="Botón_2_siguente">Volver</string>
+
+    <string name="texto_bienvenida_1">¡Bienvenido!</string>
+    <string name="texto_bienvenida_2">la aplicación móvil que le ayuda con su PYME</string>
+    <string name="texto_bienvenida_3">Versión 1.10</string>
+
+    <string name="texto_pérfil">¡Hola!  esta aplicación te ayudara a llevar registro de
+        tus trabajos en servicio técnico, enviar cotizaciones,
+        dejar establecido tus términos con cliente y enviar reportes.
+        Para empezar, creemos tu perfil.
+    </string>
+
+    <string name="Botón_perfil_1">Crear perfil</string>
+
+
+    <string name="texto_ingresa">Ingresa tus datos para iniciar tu perfil.</string>
+    <string name="texto_nombre">Nombre:</string>
+    <string name="texto_celular">Celular:</string>
+    <string name="texto_correo">Correo:</string>
+    <string name="texto_profesion">Profesión</string>
+    <string name="Botón_guardar_1">Guardar</string>
+    <string name="btn_ingrese_correo">Ingresar con correo</string>
+    <string name="check_most_clave">Mostrar clave</string>
+    <string name="texto_ape">Apellido:</string>
+    <string name="texto_clave">Clave:</string>
+    <string name="texto_conf_clave">Confirmar clave</string>
+
+    <string name="title_activity_3_drawer_menu">Servicio técnico</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Perfil usuario</string>
+    <string name="nav_header_subtitle">juanastudillo@gmail.com.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="datos_perfil">Datos perfil</string>
+
+
+    <string name="dat_equip">Datos equipo</string>
+    <string name="dat_marc">Marca:</string>
+    <string name="ingrese_marc">Ingrese la marca del computador</string>
+    <string name="dat_no_serie">N° Serie:</string>
+    <string name="ingrese_no_serie">Ingrese n° serie computador</string>
+    <string name="obs_cliente">Observaciones cliente:</string>
+    <string name="obs_tec">Observaciones técnico:</string>
+
+    <string name="chk_box_copia">Enviar copia al correo electónico cliente</string>
+
+    <string name="dat_cliente">Datos cliente</string>
+    <string name="ingrese_nom">Ingrese nombre</string>
+    <string name="ingrese_correo">Ingrese correo</string>
+    <string name="ingrese_cel">Ingrese celular</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dummy_txt">Lorem ipsum dolor sit amet, consectetuer
+        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+        Cum sociis natoque penatibus et magnis dis parturient montes</string>
+
+
+</resources>

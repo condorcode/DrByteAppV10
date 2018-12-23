@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbarra"
+    tools:context=".activity_2_log_screen">
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/logo_byte"
+            android:layout_width="wrap_content"
+            android:layout_height="114dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/byteapplogo_blanco"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/byteapplogo_blanco" />
+
+        <EditText
+            android:id="@+id/ed_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@android:color/white"
+            android:ems="10"
+            android:hint="@string/texto_nombre"
+            android:inputType="text"
+            android:textColorHint="@color/colorblanco"
+
+            />
+
+        <EditText
+            android:id="@+id/ed_apellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/white"
+            android:ems="10"
+            android:hint="@string/texto_ape"
+            android:inputType="text"
+            android:textColorHint="@color/colorblanco" />
+
+        <EditText
+            android:id="@+id/ed_celular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/white"
+            android:ems="10"
+            android:hint="@string/texto_celular"
+            android:inputType="phone"
+            android:textColorHint="@color/colorblanco" />
+
+        <EditText
+            android:id="@+id/ed_correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/white"
+            android:ems="10"
+            android:hint="@string/texto_correo"
+            android:inputType="textWebEmailAddress"
+            android:textColorHint="@color/colorblanco" />
+
+        <EditText
+            android:id="@+id/ed_clave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/white"
+            android:ems="10"
+            android:hint="@string/texto_clave"
+            android:inputType="textPassword"
+            android:textColorHint="@color/colorblanco" />
+
+        <EditText
+            android:id="@+id/ed_clave_conf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/white"
+            android:ems="10"
+            android:hint="@string/texto_conf_clave"
+            android:inputType="textPassword"
+            android:textColorHint="@color/colorblanco" />
+
+        <CheckBox
+            android:id="@+id/ch_b_most_clave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorblanco"
+            android:buttonTint="@color/colorblanco"
+            android:text="@string/check_most_clave"
+            android:textColor="@color/colorblanco" />
+
+        <Button
+            android:id="@+id/btn_crear_perf"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/mi_boton_1"
+            android:text="@string/Botón_perfil_1"
+            android:textColor="@color/colorblanco"
+
+            />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetalleActividad"
+    tools:layout_editor_absoluteY="25dp">
+
+    <!--++++++++++++++APP BAR++++++++++++++++++++++++++++++-->
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/AppBarOverlay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorbarra"
+            app:popupTheme="@style/PopupOverlay"
+
+            />
+        <!--++++++++++++++FIN++APP BAR++++++++++++++++++++++++++++++-->
+
+        <!--++++++++++++++NOMBRE CLIENTE TEXVIEW++++++++++++++++++++++++++++++-->
+
+        <TextView
+                android:id="@+id/txt_servicio_nom_cli"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:text="cliente"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+        <!--++++++++++++++FIN++++++++++NOMBRE CLIENTE TEXVIEW++++++++++++++++++++++++++++++-->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+
+                >
+
+                <!--++++++++++++++TITULO MAS BARRA DIVISORA++++++++++++++++++++++-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/txt_estado_serv_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="2dp"
+                        android:text="Estado servicio"
+                        android:textColor="@color/colorbarra"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <ImageView
+                        android:id="@+id/img_linea_div_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/boton_color_cal" />
+                </LinearLayout>
+
+                <!--++++++++++++++FIN+++++++++++++++TITULO MAS BARRA DIVISORA++++++++++++++++++++++-->
+
+                <!--++++++++++++++TEXTVIEW MAS BOTON ESTADO+++++++++++++++++++++++++++++-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/txt_estado_1_serv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Estado servicio:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/lv_txt_estado_2"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="57dp"
+                        android:background="@drawable/alert_amarillo"
+                        android:paddingLeft="23dp"
+                        android:paddingTop="5dp"
+                        android:text="Ingresado"
+                        android:textColor="@color/colorLetra_2"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+                <!--++++++++++++++FIN++++++++++++++TEXTVIEW MAS BOTON ESTADO+++++++++++++++++++++++++++++-->
+
+                <!--++++++++++++++TEXT VIEW FECHA INGRESO MAS FECHA HORIZONTAL+++++++++++++++++++++++-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/txt_fecha_1_serv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="0dp"
+                        android:text="Fecha ingreso servicio:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_fecha_dat_serv_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="40dp"
+                        android:text="fecha1"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+                <!--++++++++++++++++FIN++++++++TEXT VIEW FECHA INGRESO MAS FECHA HORIZONTAL+++++++-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/txt_fecha_2_serv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="0dp"
+                        android:text="Fecha entrega servicio:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/txt_fecha_dat_serv_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:text="no definida"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/txt_dat_equi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="2dp"
+                        android:text="@string/dat_equip"
+                        android:textColor="@color/colorbarra"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <ImageView
+                        android:id="@+id/img_linea_div"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/boton_color_cal" />
+                </LinearLayout>
+
+
+
+                <!--LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/img_linea_div_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/boton_color_cal" />
+                </LinearLayout-->
+
+                <!--++++++++++++++TEXT VIEW MARCA mas SERIE ++++++++++++++++++++++-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/txt_marc_2"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="40dp"
+                        android:text="@string/dat_marc"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/txt_num_ser_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:text="@string/dat_no_serie"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/txt_marca_servicio"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="40dp"
+                        android:text="txt"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txt_serie_servicio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:text="txt"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <!--++++++++++++++FIN++++++++++++++++++++TEXT VIEW MARCA mas SERIE ++++++++++++++++++++++-->
+
+                <!--++++++++++++++TEXT VIEW OBSERVACIONES++++++++++++++++++++++-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/txt_obs_cli_servicio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="40dp"
+                        android:text="Observaciones cliente:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16dp" />
+
+
+                </LinearLayout>
+                <!--++++++++++++++FIN++++++++++TEXT VIEW OBSERVACIONES++++++++++++++++++++++-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_obs_texto_servicio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:text="@string/dummy_txt"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/txt_titulo_fotos_servicio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="40dp"
+                        android:text="Archivos adjuntos:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/img_btn_1_ser"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:alpha=".4"
+                        android:backgroundTint="@color/colorBoton_1"
+                        android:elevation="4dp"
+                        android:scaleType="fitEnd"
+                        app:srcCompat="@drawable/image" />
+
+                    <ImageButton
+                        android:id="@+id/img_btn_2_ser"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:alpha=".4"
+                        android:backgroundTint="@color/colorBoton_1"
+                        android:elevation="4dp"
+                        android:scaleType="fitEnd"
+                        app:srcCompat="@drawable/image" />
+
+                    <ImageButton
+                        android:id="@+id/img_btn_3_ser"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:alpha=".4"
+                        android:backgroundTint="@color/colorBoton_1"
+                        android:elevation="4dp"
+                        android:scaleType="fitEnd"
+                        app:srcCompat="@drawable/image" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/txt_dat_tec_equi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="40dp"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="2dp"
+                        android:text="Técnico encargado"
+                        android:textColor="@color/colorbarra"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <ImageView
+                        android:id="@+id/img_linea_div_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="60dp"
+                        android:background="@drawable/boton_color_cal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/txt_serv_nom_tec"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Nombre técnico"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/txt_serv_correo_tec"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="correo@hotmail.com"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/txt_serv_cel_tec"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="239874928"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/txt_obs_tec_serv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="40dp"
+                        android:text="Observaciones técnico:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_obs_tec_texto_serv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/dummy_txt"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+                <!---+++++++++++++++HAbilita CHECK******  -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/check_enviar_pdf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+
+                        android:backgroundTint="@color/colorLetra_2"
+                        android:buttonTint="@color/colorLetra_2"
+                        android:text="+"
+                        android:textColor="@color/colorLetra_2"
+                        android:visibility="visible"
+
+                        />
+
+
+
+
+                </LinearLayout>
+
+                <!--++++++++++++Seccion invisible++++++++++++++++++++++-->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/img_btn_pdf"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:alpha=".4"
+                        android:backgroundTint="@color/colorBoton_1"
+                        android:elevation="4dp"
+                        android:scaleType="fitEnd"
+                        app:srcCompat="@drawable/baseline_picture_as_pdf_black_24dp"
+                        android:visibility="gone"
+                        />
+
+
+                    <CheckBox
+                        android:id="@+id/check_pdf_send"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+
+                        android:backgroundTint="@color/colorLetra_2"
+                        android:buttonTint="@color/colorLetra_2"
+                        android:text="Enviar cotización a cliente"
+                        android:textColor="@color/colorLetra_2"
+                        android:visibility="gone"
+
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/txt_dat_cli_1_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/dat_cliente"
+                        android:textColor="@color/colorbarra"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/img_linea_div_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/boton_color_cal"
+                        android:visibility="gone" />
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_nom_cli_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="Nombre:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16dp"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/txt_ed_nom_cli_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:backgroundTint="@color/colorLetra_2"
+                        android:ems="10"
+                        android:hint="@string/ingrese_nom"
+                        android:inputType="text"
+                        android:textColor="@color/colorLetra_2"
+                        android:textSize="14dp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_correo_cli_b"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:text="@string/texto_correo"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16dp"
+                            android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/txt_ed_correo_cli_b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:backgroundTint="@color/colorLetra_2"
+                        android:ems="10"
+                        android:hint="@string/ingrese_correo"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/colorLetra_2"
+                        android:textSize="14dp"
+                        android:visibility="gone"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cel_cli_c"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:text="@string/texto_celular"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16dp"
+                        android:visibility="gone"
+                        />
+
+                    <EditText
+                        android:id="@+id/txt_ed_cel_cli_c"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:backgroundTint="@color/colorLetra_2"
+                        android:ems="10"
+                        android:hint="@string/ingrese_cel"
+                        android:inputType="phone"
+                        android:textColor="@color/colorLetra_2"
+                        android:textSize="14dp"
+                        android:visibility="gone"
+                        />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+
+                    <Button
+                        android:id="@+id/button_job_1_x"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Enviar cotización"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/colorblanco"
+                        android:background="@drawable/mi_boton_fux"
+                        android:visibility="gone"
+                        />
+
+
+                </LinearLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_cotizar_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Cotizar servicio"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:textColor="@color/colorblanco"
+                        android:background="@drawable/mi_boton_cal"
+
+                        />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+</android.support.constraint.ConstraintLayout>

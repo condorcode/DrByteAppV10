@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "236737428433",
+    "firebase_url": "https://dbbyteapp.firebaseio.com",
+    "project_id": "dbbyteapp",
+    "storage_bucket": "dbbyteapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236737428433:android:8b4be789e76220fe",
+        "android_client_info": {
+          "package_name": "cl.appdrbyte.condor_code.drbyteappv10"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "236737428433-3dili330mkojc9ns614ndin2khiij1as.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cl.appdrbyte.condor_code.drbyteappv10",
+            "certificate_hash": "d65d14bff7f564414929f32235884c59821da1de"
+          }
+        },
+        {
+          "client_id": "236737428433-ci8adhf7p7fh65br0genu47ktp8rb4ka.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByUSb-MPTGMrVbTpKGG34fpfZc09GVuTc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "236737428433-ci8adhf7p7fh65br0genu47ktp8rb4ka.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

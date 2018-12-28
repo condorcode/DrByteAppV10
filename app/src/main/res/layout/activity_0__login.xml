@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbarra"
+    tools:context=".Activity_0_Login">
+
+    <LinearLayout
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.41000003">
+
+
+        <ImageView
+            android:id="@+id/logo_byte"
+            android:layout_width="wrap_content"
+            android:layout_height="156dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/byteapplogo_blanco"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/byteapplogo_blanco" />
+
+        <TextView
+            android:id="@+id/txt_log_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:gravity="center"
+            android:text="Log in:"
+
+            android:textColor="@color/colorblanco"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+
+        <EditText
+            android:id="@+id/log_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/white"
+            android:ems="10"
+            android:layout_marginTop="20dp"
+            android:hint="Correo"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/colorblanco" />
+
+        <EditText
+            android:id="@+id/log_clave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:backgroundTint="@android:color/white"
+            android:ems="10"
+            android:hint="Clave"
+            android:inputType="textPassword"
+            android:textColorHint="@color/colorblanco"
+
+            />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/mi_boton_1"
+            android:text="Ingresar"
+
+            android:textColor="@color/colorblanco" />
+
+        <TextView
+            android:id="@+id/btn_crear_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:clickable="true"
+            android:ems="10"
+            android:gravity="center"
+            android:text="Crear un usuario"
+            android:textColor="@color/colorblanco"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

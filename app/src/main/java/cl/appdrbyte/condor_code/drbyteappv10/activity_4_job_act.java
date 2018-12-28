@@ -6,6 +6,7 @@ import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.text.TextUtils;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -13,6 +14,11 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class activity_4_job_act extends AppCompatActivity {
     TextView txt_cli_text;
@@ -23,16 +29,22 @@ public class activity_4_job_act extends AppCompatActivity {
     EditText ed_txt_cel;
     EditText ed_txt_correo;
 
+    DatabaseReference database_perfil;
 
     ImageButton btnpic;
     private static final int CAM_REQUEST=1313;
+
+    CheckBox chk_box;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_4_job_act);
-
-        Button btn_job = (Button) findViewById(R.id.button_job_1);
+        chk_box = (CheckBox) findViewById (R.id.checkBoxCli);
+        chk_box.setChecked(false);
+        //instancia de la base de datos
+        database_perfil = FirebaseDatabase.getInstance().getReference("cliente");
 
         btnpic = (ImageButton) findViewById(R.id.img_btn_1);
 
@@ -59,7 +71,7 @@ public class activity_4_job_act extends AppCompatActivity {
         ed_txt_correo = (EditText) findViewById(R.id.txt_ed_correo_cli);
 
 
-        CheckBox chk_box = (CheckBox) findViewById (R.id.checkBoxCli);
+
         chk_box.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -75,6 +87,9 @@ public class activity_4_job_act extends AppCompatActivity {
                     ed_txt_cel.setVisibility(View.VISIBLE);
                     ed_txt_correo.setVisibility(View.VISIBLE);
 
+                    chk_box.setChecked(true);
+
+
                 }
                 else {
                     //case 2
@@ -86,25 +101,50 @@ public class activity_4_job_act extends AppCompatActivity {
                     ed_txt_cel.setVisibility(View.GONE);
                     ed_txt_correo.setVisibility(View.GONE);
 
+
+
                 }
 
 
             }
         });
 
+        Button btn_job = (Button) findViewById(R.id.button_job_1);
         btn_job.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(activity_4_job_act.this, activity_3_drawer_menu.class);
-                startActivity(intent);
+                if (chk_box.isChecked()) {
+
+                    Button btn_job = (Button) findViewById(R.id.button_job_1);
+                    btn_job.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            addProfile();
+                        }
+                    });
+
+                } else {
+
+                    Button btn_job = (Button) findViewById(R.id.button_job_1);
+                    btn_job.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+
+                            Intent intent = new Intent(activity_4_job_act.this, activity_3_drawer_menu.class);
+                            startActivity(intent);
+                        }
+                    });
+
+                }
+
             }
         });
 
 
 
-
-
     }
+
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -132,6 +172,37 @@ public class activity_4_job_act extends AppCompatActivity {
             Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
             startActivityForResult(intent,CAM_REQUEST);
         }
+    }
+
+
+    private void addProfile() {
+
+        String nameCli = ed_txt_nom.getText().toString().trim();
+        String celCli = ed_txt_cel.getText().toString().trim();
+        String mailCli = ed_txt_correo.getText().toString().trim();
+
+
+        if (!TextUtils.isEmpty(nameCli) || !TextUtils.isEmpty(celCli)
+                || !TextUtils.isEmpty(mailCli) ) {
+
+            String UId = FirebaseAuth.getInstance().getCurrentUser().getUid();
+            String id = database_perfil.push().getKey();
+
+            Cliente cli = new Cliente(UId, nameCli, celCli, mailCli);
+
+            database_perfil.child(id).setValue(cli);
+
+            Toast.makeText(this,"Cliente agregado", Toast.LENGTH_SHORT).show();
+
+            //+++++++++++++++++++++++++++++ AQUI NOS VAMOS A LA 3era ACTITVITY++++++++++++++++++++++
+            Intent intent = new Intent(activity_4_job_act.this, activity_3_drawer_menu.class);
+            startActivity(intent);
+
+
+        }else {
+            Toast.makeText(this, "Ingrese datos", Toast.LENGTH_SHORT).show();
+        }
+
     }
 
 

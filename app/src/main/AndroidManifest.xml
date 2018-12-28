@@ -45,7 +45,9 @@
             android:label="Estadisticas">
             >
         </activity>
-        <activity android:name=".MailSend"></activity>
+        <activity android:name=".MailSend" />
+        <activity android:name=".Activity_0_Login" />
+        <activity android:name=".ActivityCrash"></activity>
     </application>
 
 </manifest>

@@ -42,11 +42,11 @@ public class activity_3_perfil_creado_validar extends AppCompatActivity {
 
         items_lista = new ArrayList<clientes_datos_list>();
 
-        ref = FirebaseDatabase.getInstance().getReference("/perfiles");
+        //ref = FirebaseDatabase.getInstance().getReference("/perfiles");
 
         Toast.makeText(activity_3_perfil_creado_validar.this, id_profile, Toast.LENGTH_LONG).show();
 
-
+/*
         ref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -93,7 +93,7 @@ public class activity_3_perfil_creado_validar extends AppCompatActivity {
 
 
 
-
+*/
 
 
 
